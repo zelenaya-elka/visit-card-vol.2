@@ -45,6 +45,8 @@ img{
 .common-info__contact-photo_position{
 	float: left;
 	margin: 0px 30px;
+	width: 200px;
+	height: 200px;
 	
 	border: 1px solid #8D91A2;
 	-webkit-border-radius: 3px;
@@ -71,16 +73,27 @@ img{
 	display: block;
 	width: 50px;
 	height: 50px;
-	background-image: url('../images/github.png');	
-	background-size: 50px;
 	
 	float: right;
 	margin-top: 20px;
 	margin-right: 200px;
+	
+	text-indent: -100px;
 }
 
-.common-info__outside-link_settings:hover{
-	background-image: url('../images/github-128.png');
+.common-info__outside-link_settings .outside-link__logo{
+	width: 50px;
+	height: 50px;
+	margin-left: 110px;
+}
+
+.common-info__outside-link_settings .outside-link__logo::before{
+	content: "Профиль на github.com";
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	white-space: nowrap;
+	
 }
 
 .skills{
